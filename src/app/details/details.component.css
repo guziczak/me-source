@@ -13,7 +13,7 @@
 }
 
 .listing-location::before {
-  content: url('https://guziczak.github.io/me/assets/location-pin.svg') / '';
+  content: url("https://guziczak.github.io/me/assets/location-pin.svg") / "";
 }
 
 .listing-location {

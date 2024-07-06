@@ -4,7 +4,7 @@ export interface HousingLocation {
   positionName: string | undefined;
   city: string;
   state: string;
-  photo: string;
+  photo: string | undefined;
   photo2: string;
   availableUnits: number;
   wifi: boolean;

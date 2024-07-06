@@ -17,7 +17,7 @@
   padding: 10px 20px 20px 20px;
 }
 .listing-location::before {
-  content: url("https://guziczak.github.io/me/assets/location-pin.svg") / "";
+  content: url('/assets/location-pin.svg') / '';
 }
 
 section.listing a {
