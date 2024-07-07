@@ -1,6 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HousingLocation } from './housinglocation';
 import { FileService } from './helpers/file.service';
+import { CSVRecord } from './helpers/CSVRecord';
 
 @Injectable({
   providedIn: 'root'
@@ -27,13 +28,14 @@ export class HousingService {
     let obj: HousingLocation;
     let photoUrl = undefined;
     let exists:boolean = false;
+    let records:CSVRecord[] = await this.fileService.getRecords('https://guziczak.github.io/me/assets/text_content/right.csv');
 
     for(let i=positionsNumber; i>0; i--){
       obj = {
         id: i,
-        name: 'Acme Fresh Start Housing',
+        name: records[i-1].companyName,
         positionName: 'Fullstack Developer',
-        companyName: 'Right Information',
+        companyName: records[i].companyName,
         city: 'Chicago',
         state: 'IL',
         photo: undefined,
@@ -57,6 +59,11 @@ export class HousingService {
   }
   this.housingLocationList = arr;
   console.log(arr);
+
+  console.log(
+    this.fileService.getRecords('https://guziczak.github.io/me/assets/text_content/right.csv')
+  );
+  
 }
 
 

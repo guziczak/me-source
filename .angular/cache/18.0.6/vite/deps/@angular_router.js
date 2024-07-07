@@ -1,7 +1,7 @@
 import {
   Title
-} from "./chunk-PZCYBLMI.js";
-import "./chunk-3UJ37KUT.js";
+} from "./chunk-OTD7XUPS.js";
+import "./chunk-WK7XJOSB.js";
 import {
   DOCUMENT,
   HashLocationStrategy,
@@ -10,21 +10,25 @@ import {
   LocationStrategy,
   PathLocationStrategy,
   ViewportScroller
-} from "./chunk-55JG6BXV.js";
+} from "./chunk-33UENKCN.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   APP_INITIALIZER,
   AfterRenderPhase,
   ApplicationRef,
   Attribute,
+  BehaviorSubject,
   ChangeDetectorRef,
   Compiler,
   Component,
+  ConnectableObservable,
   Console,
   ContentChildren,
   Directive,
+  EMPTY,
   ENVIRONMENT_INITIALIZER,
   ElementRef,
+  EmptyError,
   EnvironmentInjector,
   EventEmitter,
   HostBinding,
@@ -44,20 +48,52 @@ import {
   Renderer2,
   RuntimeError,
   SkipSelf,
+  Subject,
+  Subscription,
   Version,
   ViewContainerRef,
+  __async,
+  __spreadProps,
+  __spreadValues,
   afterNextRender,
   booleanAttribute,
+  catchError,
+  combineLatest,
+  concat,
+  concatMap,
   createEnvironmentInjector,
+  defaultIfEmpty,
+  defer,
+  filter,
+  finalize,
+  first,
+  from,
   inject,
   isInjectable,
   isNgModule,
+  isObservable,
   isPromise,
   isStandalone,
+  last,
   makeEnvironmentProviders,
+  map,
+  mapTo,
+  mergeAll,
+  mergeMap,
+  of,
+  pipe,
+  refCount,
   reflectComponentType,
   runInInjectionContext,
+  scan,
   setClassMetadata,
+  startWith,
+  switchMap,
+  take,
+  takeLast,
+  takeUntil,
+  tap,
+  throwError,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
   ɵɵStandaloneFeature,
@@ -78,48 +114,7 @@ import {
   ɵɵloadQuery,
   ɵɵqueryRefresh,
   ɵɵsanitizeUrlOrResourceUrl
-} from "./chunk-ASFWULK7.js";
-import {
-  defer,
-  isObservable
-} from "./chunk-LMFWYZLC.js";
-import "./chunk-KT3RQDJZ.js";
-import {
-  BehaviorSubject,
-  ConnectableObservable,
-  EMPTY,
-  EmptyError,
-  Subject,
-  Subscription,
-  __async,
-  __spreadProps,
-  __spreadValues,
-  catchError,
-  combineLatest,
-  concat,
-  concatMap,
-  defaultIfEmpty,
-  filter,
-  finalize,
-  first,
-  from,
-  last,
-  map,
-  mapTo,
-  mergeAll,
-  mergeMap,
-  of,
-  pipe,
-  refCount,
-  scan,
-  startWith,
-  switchMap,
-  take,
-  takeLast,
-  takeUntil,
-  tap,
-  throwError
-} from "./chunk-RVQ3RH6Y.js";
+} from "./chunk-T4EO7UJD.js";
 
 // node_modules/@angular/router/fesm2022/router.mjs
 var PRIMARY_OUTLET = "primary";
