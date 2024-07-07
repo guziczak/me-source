@@ -17,21 +17,6 @@ export class HousingService {
     '.svg'
   ];
 
-  protected aaa: HousingLocation[] = [
-    {
-      id: 0,
-      name: 'Acme Fresh Start Housing',
-      positionName: 'Satellite Engineer',
-      city: 'Chicago',
-      state: 'IL',
-      photo: 'assets/logos/work/6.jpg',
-      photo2: 'assets/logos/work/5.jpeg',
-      availableUnits: 4,
-      wifi: true,
-      laundry: true
-    }
-  ];
-
   protected housingLocationList: HousingLocation[] = [];
 
   async initializeAllHousingLocations(positionsNumber: number) {
@@ -44,11 +29,11 @@ export class HousingService {
     let exists:boolean = false;
 
     for(let i=positionsNumber; i>0; i--){
-      console.log(i);
       obj = {
         id: i,
         name: 'Acme Fresh Start Housing',
-        positionName: 'Satellite Engineer',
+        positionName: 'Fullstack Developer',
+        companyName: 'Right Information',
         city: 'Chicago',
         state: 'IL',
         photo: undefined,
@@ -62,7 +47,6 @@ export class HousingService {
         photoUrl = this.baseUrl + i + extension;
         exists = await this.fileService.fileExists(photoUrl).then(()=>true).catch(()=>false);
         if (exists) {
-          console.log('udalo sie!',photoUrl)
           obj.photo=photoUrl;
           break;
         }
